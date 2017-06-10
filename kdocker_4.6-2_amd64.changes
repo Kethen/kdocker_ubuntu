@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Sun, 06 May 2012 20:22:23 +0400
+Source: kdocker
+Binary: kdocker
+Architecture: amd64
+Version: 4.6-2
+Distribution: unstable
+Urgency: low
+Maintainer: Ignace Mouzannar <mouzannar@gmail.com>
+Changed-By: Ignace Mouzannar <mouzannar@gmail.com>
+Description:
+ kdocker    - lets you dock any application into the system tray
+Closes: 667223
+Changes:
+ kdocker (4.6-2) unstable; urgency=low
+ .
+   [gregor herrmann]
+   * Fix "ftbfs with GCC-4.7": add patch 02_gcc_4.7.diff (missing include).
+     (Closes: #667223)
+ .
+   [Ignace Mouzannar]
+   * debian/control:
+     - Bumped Standards-Version to 3.9.3. No changes needed.
+     - Added DM-Upload-Allowed field to yes.
+   * debian/watch:
+     - Updated to use https as http was not responding anymore.
+Checksums-Sha1:
+ 5cc6c3f90ef7ee7837eddec647b909342fa630e0 93686 kdocker_4.6-2_amd64.deb
+Checksums-Sha256:
+ 4be010844b8a2d3d4bebe85e793dbbe6e8d5fc55f0cd4a70376175ac0ed14aae 93686 kdocker_4.6-2_amd64.deb
+Files:
+ db2abb9886c85c6f805199053e6a0816 93686 x11 optional kdocker_4.6-2_amd64.deb
