@@ -97,7 +97,7 @@ void KDocker::preProcessCommand(int argc, char **argv) {
             case 'u':
                 uniqueInstance = true;
                 //printUsage();
-                ::exit(0);
+                //::exit(0);
                 break;
             case 'v':
                 printVersion();
