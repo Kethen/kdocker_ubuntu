@@ -8,9 +8,11 @@ Building:
 enable deb-src http://us.archive.ubuntu.com/ubuntu/ xenial universe
 (uncomment deb-src http://us.archive.ubuntu.com/ubuntu/ xenial universe in /etc/apt/sources.list then run sudo apt update, or use software sources gui)
 
-$sudo apt build-dep kdocker
-$cd kdocker-4.6
-$dpkg-buildpackage -rfakeroot -uc -b
+'''
+$ sudo apt build-dep kdocker
+$ cd kdocker-4.6
+$ dpkg-buildpackage -rfakeroot -uc -b
+'''
 
 Note:
 This particular version of kdocker builds properly with qt4, not sure about 5. Change the make file accordingly to use qmake-qt4
