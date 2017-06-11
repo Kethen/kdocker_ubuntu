@@ -25,8 +25,8 @@ Changes:
    * debian/watch:
      - Updated to use https as http was not responding anymore.
 Checksums-Sha1:
- 5cc6c3f90ef7ee7837eddec647b909342fa630e0 93686 kdocker_4.6-2_amd64.deb
+ 23b476ede4faeb048bdc6e7f8005c1c5f5387c20 93790 kdocker_4.6-2_amd64.deb
 Checksums-Sha256:
- 4be010844b8a2d3d4bebe85e793dbbe6e8d5fc55f0cd4a70376175ac0ed14aae 93686 kdocker_4.6-2_amd64.deb
+ 540aa19f0efc0a118c94b48aa69d7dc961f74a454a30cb915f7659f0092a5030 93790 kdocker_4.6-2_amd64.deb
 Files:
- db2abb9886c85c6f805199053e6a0816 93686 x11 optional kdocker_4.6-2_amd64.deb
+ 0024546192da0edc317aba70cd4bee26 93790 x11 optional kdocker_4.6-2_amd64.deb

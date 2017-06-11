@@ -69,11 +69,13 @@ int main(int argc, char *argv[]) {
     kdocker.preProcessCommand(argc, argv);
 
     // Send the arguments in a message to another instance if there is one.
-    if (app.sendMessage(QCoreApplication::arguments().join("\n")) && !kdocker.isUniqueInstance()) {
+    // Before that check if it's unique mode first
+    if (!kdocker.isUniqueInstance() && app.sendMessage(QCoreApplication::arguments().join("\n"))) {
         return 0;
     }
 
     // Handle messages from other instance so this can be a single instance app.
+    // Check if it's unique mode first
     if(!kdocker.isUniqueInstance())
         QObject::connect(&app, SIGNAL(messageReceived(const QString&)), &kdocker, SLOT(handleMessage(const QString&)));
 
